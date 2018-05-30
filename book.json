@@ -1,6 +1,0 @@
-{
-    "root": "./",
-    "title": "cheatsheet",
-    "author": "XS Zhao",
-    "plugins": ["prism", "-highlight"]
-}
