@@ -1,3 +1,3 @@
-gulp compress
-# gulp publish
-# rm -rf .publish
+gitbook build
+gulp minify
+gulp publish
