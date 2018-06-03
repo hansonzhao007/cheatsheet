@@ -6,7 +6,7 @@
 #                       WAN IP:129.107.35.245        LAN IP:10.0.0.30
 ```
 ## [Transparent Multi-Hop](http://sshmenu.sourceforge.net/articles/transparent-mulithop.html)
-
+[reference](http://sshmenu.sourceforge.net/articles/transparent-mulithop.html)
 ```bash
 # 相当于 SSH client 链接到 Jump host 以后，再从 Jump host ssh 链接到 Target server
 # 有多少次跳转就要输入多少次密码
@@ -61,7 +61,7 @@ xxz1499@129.107.35.245 password:
 # ==================
 #  1. 本地机器配置
 #  a) 在本地创建 ssh key，然后在 server 端添加该 key。比如 hanson user 的 key
-#  b) 在本地设置 ssh 转发 tunnel
+#  b) 在本地设置 ssh 转发 tunnel。下面相当于把对本地 9999 端口的访问转发到了翻墙服务器上
 # 
 #  -D: Tells SSH that we want a SOCKS tunnel on the specified port number (you can choose a number between 1025-65536)
 #  -f: Forks the process to the background
