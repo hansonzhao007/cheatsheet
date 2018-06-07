@@ -11,6 +11,8 @@ $( document ).ready(function() {
             }});
         gitment.render('gitment-container');
     }
+    
+
     $( ".page-inner" ).append('<div class="comments" id="comments"><div id="gitment-container"></div></div>');
 
     renderGitment();
