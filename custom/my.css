@@ -2,3 +2,8 @@ p code:hover {
     color: #c82829;
     background: #f9f2f4;
 }
+p code{
+    color: #c82829;
+    background: #f9f2f4;
+    font-weight: 800;
+}

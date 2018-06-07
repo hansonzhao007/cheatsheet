@@ -2,7 +2,17 @@
     "root": "./",
     "title": "cheatsheet",
     "author": "XS Zhao",
-    "plugins": ["prism", "-highlight", "addcssjs", "anchor-navigation-ex", "folding-chapters"],
+    "plugins": [
+        "prism", 
+        "-highlight", 
+        "addcssjs", 
+        "anchor-navigation-ex", 
+        "folding-chapters",
+        "-lunr", "-search", "search-plus",
+        "splitter",
+        "sitemap",
+        "github-buttons"
+    ],
     "pluginsConfig": {
         "addcssjs": { 
             "js": [
@@ -11,7 +21,20 @@
             "css": [
                 "./custom/my.css"
             ] 
-        } 
+        },
+        "sitemap": {
+            "hostname": "http://xszhao.science/cheatsheet"
+        },
+        "github-buttons": {
+            "buttons": [{
+                "user": "hansonzhao007",
+                "repo": "cheatsheet",
+                "type": "star",
+                "size": "small",
+                "count": true
+                }   
+            ]
+        }
     }
 
 }
