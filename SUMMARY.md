@@ -1,8 +1,10 @@
 # Summary
 
 * [Introduction](README.md)
+* Git
+  * [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * Linux
-  * [ssh](linux/ssh.md)
-  * [skills](linux/skills.md)
+  * [ssh](content/linux/ssh.md)
+  * [skills](content/linux/skills.md)
 * Web
-  * [Gitbook](web/gitbook.md)
+  * [Gitbook](content/web/gitbook.md)
