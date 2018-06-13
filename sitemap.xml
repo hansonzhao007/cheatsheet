@@ -3,5 +3,6 @@
 <url> <loc>http://xszhao.science/./</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/ssh.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/skills.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://xszhao.science/content/linux/inode.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/web/gitbook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
