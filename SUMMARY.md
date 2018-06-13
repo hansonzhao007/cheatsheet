@@ -6,5 +6,6 @@
 * Linux
   * [ssh](content/linux/ssh.md)
   * [skills](content/linux/skills.md)
+  * [inode](content/linux/inode.md)
 * Web
   * [Gitbook](content/web/gitbook.md)
