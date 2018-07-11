@@ -4,7 +4,7 @@
 
 ### sperf
 
-```bash: sperf
+```bash 
 #!/bin/bash
 if [[ $# -eq 0 ]]; then
   echo "  Usage: sperf <commands> ..."
@@ -16,7 +16,7 @@ perf record -q --call-graph lbr --switch-output -- "$@"
 
 ### perfsvg
 
-```bash: perfsvg
+```bash 
 #!/bin/bash
 if [[ $# -eq 0 ]]; then
   echo "  Usage: perfsvg <filename> ..."
