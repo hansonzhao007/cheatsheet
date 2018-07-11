@@ -8,3 +8,14 @@ do
     mv "$name"  "$newname"
 done
 ```
+
+使用指定变量名：
+```bash
+# 从 var 变量名的右边开始匹配，并删除 pattern 匹配的部分
+# var: task1.c
+# ${var%.c}: 去除 ".c" 后缀
+${var%pattern} 
+
+
+
+```
