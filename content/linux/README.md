@@ -1,1 +1,0 @@
-# Skills in linux
