@@ -40,7 +40,7 @@ Host u30
 # ssh 链接，才能访问到 Target server. 该方法并不需要添加 public key，只要用户密码
 
 # 1.run command in Jump host:
-ssh -2fqnNT -L 129.107.35.245:8888:10.0.0.30:22 <Hostname of Jump host>
+ssh -2fnNT -L 129.107.35.245:8888:10.0.0.30:22 <Hostname of Jump host>
 #   Then we can see a port forwarding thread:
 #   [hanson@uhead ~]$ ss -tnl
 #   LISTEN    0   128    129.107.35.245:8888     0.0.0.0:*
@@ -69,7 +69,7 @@ xxz1499@129.107.35.245 password:
 #  -q: Uses quiet mode
 #  -N: Tells SSH that no command will be sent once the tunnel is up
 # ==================
-ssh -2fqnNT -D 9999 hanson@141.217.24.182
+ssh -2fnNT -D 9999 hanson@141.217.24.182
 
 # ==================
 #  2. 在 firefox 里面设置 proxy 
