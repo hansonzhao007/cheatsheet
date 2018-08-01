@@ -15,7 +15,22 @@ done
 # var: task1.c
 # ${var%.c}: 去除 ".c" 后缀
 ${var%pattern} 
+```
 
+# 批量创建用户
 
+```bash
+newusers batchuserfile
+```
 
+```bash :batchuserfile
+# batchuserfile
+# pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
+phc8166:phc8166::::/stu/phc8166:/bin/bash
+tvd6298:tvd6298::::/stu/tvd6298:/bin/bash
+sxg8183:sxg8183::::/stu/sxg8183:/bin/bash
+rxs9961:rxs9961::::/stu/rxs9961:/bin/bash
+axs7268:axs7268::::/stu/axs7268:/bin/bash
+kxt4593:kxt4593::::/stu/kxt4593:/bin/bash
+safal:safal::::/stu/safal:/bin/bash
 ```

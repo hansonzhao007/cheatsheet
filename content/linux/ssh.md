@@ -38,7 +38,7 @@ Host u30
 ```bash
 # 该方法需要在 Jump host 上运行下面的 ssh 命令，然后 SSH client 在指定的端口进行
 # ssh 链接，才能访问到 Target server. 该方法并不需要添加 public key，只要用户密码
-
+# 需要注意的是，在`本机的 authorized_key` 里面必须把`自己的 ssh public key 添加进去`。
 # 1.run command in Jump host:
 ssh -2fnNT -L 129.107.35.245:8888:10.0.0.30:22 <Hostname of Jump host>
 #   Then we can see a port forwarding thread:
