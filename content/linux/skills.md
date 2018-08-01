@@ -23,7 +23,7 @@ ${var%pattern}
 newusers batchuserfile
 ```
 
-```bash :batchuserfile
+```bash
 # batchuserfile
 # pw_name:pw_passwd:pw_uid:pw_gid:pw_gecos:pw_dir:pw_shell
 phc8166:phc8166::::/stu/phc8166:/bin/bash
