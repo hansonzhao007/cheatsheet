@@ -77,3 +77,9 @@ ssh -2fnNT -D 9999 hanson@141.217.24.182
 #  SOCKS Host: localhost       Port:9999
 # ==================
 ```
+
+# Kill all ssh connection
+
+```bash
+ps aux | grep ssh | grep -v grep | awk {'print $2'} | xargs -r kill -9
+```
