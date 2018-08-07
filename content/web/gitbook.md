@@ -192,3 +192,6 @@ usage:
 ```bash
 gulp publish
 ```
+
+# 安装插件
+[插件推荐](https://gitbook.zhangjikai.com/)

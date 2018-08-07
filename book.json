@@ -12,9 +12,16 @@
         "splitter",
         "sitemap",
         "github-buttons",
-        "page-footer"
+        "page-footer",
+        "terminal"
     ],
     "pluginsConfig": {
+       
+        "terminal": {
+            "copyButtons": true,
+            "fade": false,
+            "style": "flat"
+        },
         "addcssjs": { 
             "js": [
                 "./custom/my.js"

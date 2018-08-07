@@ -34,3 +34,16 @@ axs7268:axs7268::::/stu/axs7268:/bin/bash
 kxt4593:kxt4593::::/stu/kxt4593:/bin/bash
 safal:safal::::/stu/safal:/bin/bash
 ```
+
+# Batch grading
+```
+test=("Saving correctly!" "file1.txt file2.txt merged_file.txt" "append.txt 2 line1 line2")
+i=0
+for src in *.c; do
+    printf "************ task $((i + 2)) ************\n"
+    gcc -w $src
+    ./a.out <<< ${test[$i]}
+    i=$((i + 1))
+    printf "\n"
+done;
+```
