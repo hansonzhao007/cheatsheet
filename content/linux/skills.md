@@ -47,3 +47,16 @@ for src in *.c; do
     printf "\n"
 done;
 ```
+
+# 批量 grade homework
+```bash
+test=("2 a 100 b 90" "3 1 2 3" "3 4 5 6" "5 1 2 3 4 5" " 4 1 2 3 4 3")
+i=0
+for src in *.c; do
+    printf "************ task $((i + 2)) ************\n"
+    gcc -w $src
+    ./a.out <<< ${test[$i]}
+    i=$((i + 1))
+    printf "\n"
+done;
+```
