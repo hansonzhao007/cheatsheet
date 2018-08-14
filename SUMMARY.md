@@ -4,6 +4,7 @@
 * Git
   * [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * Linux
+  * [cpu](content/linux/cpu.md)
   * [disk](content/linux/disk.md)
   * [inode](content/linux/inode.md)
   * [perf](content/linux/perf.md)
