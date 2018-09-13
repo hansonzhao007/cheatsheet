@@ -81,7 +81,7 @@ ssh -2fnNT -D 9999 hanson@141.217.24.182
 # Kill all old ssh connection
 
 ```bash
-kill $(who -la | grep old | egrep -o  "[0-9]{5}")
+kill $(who -la | grep old | grep -o '\bold *[0-9]*' | grep -o '[0-9]*')
 ```
 
 # List old ssh
