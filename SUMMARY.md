@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
+* C++
+  * [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
 * Git
   * [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * Linux
