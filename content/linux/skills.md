@@ -60,3 +60,25 @@ for src in *.c; do
     printf "\n"
 done;
 ```
+
+# DD 命令创建U盘启动盘
+
+`diskutil list`: 输出挂载 U 盘信息
+`diskutil umountDisk disk4`: 卸载U盘
+
+使用dd命令将下载的Ubuntu Linux镜像恢复到U盘上。一定注意不要把磁盘写错了。不然哭死。
+
+```bash: 
+sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4 bs=50m
+```
+
+完整的输出信息：
+```bash
+~ % diskutil umountDisk disk4
+Unmount of all volumes on disk4 was successful
+~ % sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4 bs=1m
+Password:
+1431+1 records in
+1431+1 records out
+1501102080 bytes transferred in 906.101477 secs (1656660 bytes/sec)
+```
