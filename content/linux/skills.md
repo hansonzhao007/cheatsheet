@@ -86,3 +86,45 @@ Password:
 1431+1 records out
 1501102080 bytes transferred in 906.101477 secs (1656660 bytes/sec)
 ```
+
+# Compile kernel
+
+## prepare
+
+```bash
+sudo apt update
+sudo apt install bison flex
+sudo apt install build-essential
+sudo apt install libncurses5-dev
+sudo apt install fakeroot libssl-dev
+sudo apt install libelf-dev
+
+# go to linux source folder
+# copy config file to current folder
+cp /boot/config-$(uname -r) .config   
+make menuconfig # 打开可视化菜单
+# 选择 load→OK→Save→OK→EXIT→EXIT
+```
+
+## compile
+```bash
+# compile iso
+make bzImage -j32
+
+# compile modules
+make modules -j32
+
+# install modules
+make modules_install
+
+# install kernel
+make install
+```
+
+## change bootloader
+```bash
+sudo update-grub
+```
+
+
+
