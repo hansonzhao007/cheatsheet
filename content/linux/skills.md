@@ -109,7 +109,7 @@ make menuconfig # 打开可视化菜单
 ## compile
 ```bash
 # compile iso
-make bzImage -j32
+sudo make -j32
 
 # compile modules
 make modules -j32
