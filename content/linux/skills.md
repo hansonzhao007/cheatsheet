@@ -76,7 +76,7 @@ sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4
 ```bash
 ~ % diskutil umountDisk disk4
 Unmount of all volumes on disk4 was successful
-~ % sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4 bs=1m
+~ % sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4 status="progress"
 Password:
 1431+1 records in
 1431+1 records out
