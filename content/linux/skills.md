@@ -70,6 +70,10 @@ done;
 
 ```bash: 
 sudo dd if=/Users/sky/Downloads/ISO/ubuntu-17.10-desktop-amd64.iso of=/dev/disk4 bs=50m
+
+# mac
+brew install coreutils
+sudo gdd if=Downloads/archlinux-2018.10.01-x86_64\(1\).iso of=/dev/disk2 status=progress
 ```
 
 完整的输出信息：
