@@ -9,3 +9,8 @@ nc -zv 127.0.0.1 22 80 8080
 # range of ports
 nc -zv 127.0.0.1 22 20-30
 ```
+
+# ip scan
+```bash
+nmap -sP 10.0.0.*
+```
