@@ -16,3 +16,4 @@
   * [skills](content/linux/skills.md)
 * Web
   * [Gitbook](content/web/gitbook.md)
+* [Vim](content/vim.md)
