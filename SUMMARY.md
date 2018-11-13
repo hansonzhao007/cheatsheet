@@ -10,7 +10,7 @@
   * [cpu](content/linux/cpu.md)
   * [disk](content/linux/disk.md)
   * [inode](content/linux/inode.md)
-  * [memory](content/mem.md)
+  * [memory](content/linux/mem.md)
   * [network](content/linux/network.md)
   * [perf](content/linux/perf.md)
   * [ssh](content/linux/ssh.md)
