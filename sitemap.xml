@@ -4,6 +4,7 @@
 <url> <loc>http://xszhao.science/content/linux/cpu.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/disk.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/inode.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://xszhao.science/content/linux/mem.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/network.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/perf.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/ssh.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
