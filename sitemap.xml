@@ -9,6 +9,7 @@
 <url> <loc>http://xszhao.science/content/linux/perf.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/ssh.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/linux/skills.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
+<url> <loc>http://xszhao.science/content/python/pandas.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/web/gitbook.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 <url> <loc>http://xszhao.science/content/vim.html</loc> <changefreq>weekly</changefreq> <priority>0.5</priority> </url>
 </urlset>
