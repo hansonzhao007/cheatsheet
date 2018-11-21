@@ -15,6 +15,8 @@
   * [perf](content/linux/perf.md)
   * [ssh](content/linux/ssh.md)
   * [skills](content/linux/skills.md)
+* Python
+  * [pandas](content/python/pandas.md)
 * Web
   * [Gitbook](content/web/gitbook.md)
 * [Vim](content/vim.md)
