@@ -11,6 +11,12 @@ sudo mkdosfs /dev/sda6 把该设备格式化成fat16文件系统，同mkfs.msdos
 sudo mkswap /dev/sda6 把该设备格式化成swap文件系统
 ```
 
+# Lisk all Partitions
+
+```bash
+fdisk -l
+```
+
 # 挂载
 ```bash
 mount：直接输出所有的盘符挂载情况
