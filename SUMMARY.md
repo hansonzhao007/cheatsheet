@@ -7,6 +7,7 @@
 * Git
   * [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 * Linux
+  * [cmake](content/linux/cmake.md)
   * [cpu](content/linux/cpu.md)
   * [disk](content/linux/disk.md)
   * [inode](content/linux/inode.md)
