@@ -1,5 +1,24 @@
 # Install Java & Maven
 
+## Install Maven
+
+```bash
+sudo apt install maven
+```
+
+## Install required tools and libraries
+
+```bash
+sudo apt update
+
+sudo apt install clang libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev automake libtool make libboost-all-dev git python-dev python3-dev python-setuptools python3-setuptools autotools-dev libicu-dev build-essential libbz2-dev libsnappy-dev
+```
+
+update `Library Search Path`:
+```bash
+clang -Xlinker -v
+
+```
 # Install Libevent
 
 ```bash
@@ -11,26 +30,20 @@ sudo make -j32 && sudo make install
 ```
 
 # Install boost
-
+<!-- 
 ```bash
-wget https://sourceforge.net/projects/boost/files/boost/1.53.0/boost_1_53_0.tar.gz
-tar xfvz boost_1_53_0.tar.gz
-cd boost_1_53_0
+wget https://sourceforge.net/projects/boost/files/boost/1.65.1/boost_1_65_1.tar.bz2
+tar xfvz boost_1_65.1.tar.gz
+cd boost_1_65.1
 ./bootstrap.sh --prefix=/home/hanson/program/usr
 sudo ./b2 -j32 install
+``` -->
+```bash
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libboost_system.so.1.65.1 libboost_system.so
+sudo ln -sf /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.65.1 libboost_thread.so
 ```
 
 # Install Thrift
-
-## Install required tools and libraries
-
-```bash
-sudo apt update
-
-sudo apt install libboost-dev libboost-test-dev libboost-program-options-dev libboost-filesystem-dev libboost-thread-dev libevent-dev automake libtool flex bison pkg-config g++ libssl-dev automake libtool make libboost-all-dev git python-dev python3-dev python-setuptools python3-setuptools autotools-dev libicu-dev build-essential libbz2-dev
-    
-```
-
 
 ## Install Ant
 
@@ -45,34 +58,38 @@ sudo apt install ant
 wget https://github.com/apache/thrift/archive/0.10.0.zip
 tar xfvz 0.10.0.zip
 cd thrift-0.10.0
-./bootstrap.sh --prefix=/home/hanson/program/usr
-./configure --prefix=/home/hanson/program/usr
+./bootstrap.sh
+./configure --prefix=/usr/local
 ```
 
 At the end of the output you should be able to see a list of all the libraries that are currently built in your system and ready to use with your desired programming languages. If a component is missing you should download the missing language and repeat the above step.
 
 ```bash
-thrift 0.8.0
+thrift 0.10.0
 
-Building code generators ..... :
-
+Building Plugin Support ...... : yes
 Building C++ Library ......... : yes
-Building C (GLib) Library .... : no
+Building C (GLib) Library .... : yes
 Building Java Library ........ : no
 Building C# Library .......... : no
 Building Python Library ...... : yes
 Building Ruby Library ........ : no
+Building Haxe Library ........ : no
 Building Haskell Library ..... : no
 Building Perl Library ........ : no
 Building PHP Library ......... : no
+Building Dart Library ........ : no
 Building Erlang Library ...... : no
 Building Go Library .......... : no
+Building D Library ........... : no
+Building NodeJS Library ...... : no
+Building Lua Library ......... : no
 
-Building TZlibTransport ...... : yes
-Building TNonblockingServer .. : yes
-
-Using Python ................. : /usr/bin/python
-
+C++ Library:
+   Build TZlibTransport ...... : yes
+   Build TNonblockingServer .. : yes
+   Build TQTcpServer (Qt4) .... : no
+   Build TQTcpServer (Qt5) .... : no
 ```
 
 ```bash
