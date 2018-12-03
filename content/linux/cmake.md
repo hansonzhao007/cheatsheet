@@ -59,7 +59,7 @@ If we wanted to use a different generator we pass it to cmake using the `-G` par
 cmake .. -GXcode
 ```
 
-# Using CMake with libraries
+# Building library
 
 Building our own library. Use `add_library`.
 
@@ -70,9 +70,7 @@ add_library(test STATIC test.c)
 install(TARGETS test DESTINATION lib)
 install(FILES test.h DESTINATION include)
 ```
-
-
-
+CMake will build the library as libtest.a and install it into lib folder of the install directory.
 
 # Reference
 
@@ -80,4 +78,4 @@ install(FILES test.h DESTINATION include)
 * [CMake Community Wiki](https://gitlab.kitware.com/cmake/community/wikis/Home)
 * [CMake by Example](https://mirkokiefer.com/cmake-by-example-f95eb47d45b1)
 * [Minimal CMake Example](https://github.com/krux02/minimal_cmake_example)
-
+* [Share this page Learn X in Y minutes](https://learnxinyminutes.com/docs/cmake/)

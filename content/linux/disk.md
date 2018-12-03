@@ -22,3 +22,10 @@ fdisk -l
 mount：直接输出所有的盘符挂载情况
 mount [-t type] device dir: 将device挂载到目录dir上。如果dir是已经存在的有内容的目录，那么新挂载的盘会暂时替换原有的内容，这时候只需要使用命令 umount卸载disk即可。
 ```
+
+
+# fio
+
+[fio documentation](https://fio.readthedocs.io/en/latest/fio_doc.html)
+
+[Storage Performance Benchmarking with fio](https://thesanguy.com/2018/01/24/storage-performance-benchmarking-with-fio/)
