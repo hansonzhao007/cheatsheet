@@ -11,10 +11,11 @@ sudo mkdosfs /dev/sda6 把该设备格式化成fat16文件系统，同mkfs.msdos
 sudo mkswap /dev/sda6 把该设备格式化成swap文件系统
 ```
 
-# Lisk all Partitions
+# Disk Command
 
 ```bash
-fdisk -l
+df -Th # 显示磁盘挂在目录，以及文件系统
+lsblk  # displays block devices
 ```
 
 # 挂载
