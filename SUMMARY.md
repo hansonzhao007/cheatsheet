@@ -6,6 +6,7 @@
 * [Markdown](http://xszhao.science/blog/markdown-syntax/)
 * Git
   * [cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
+  * [skills](content/git/skills.md)
 * Linux
   * [cmake](content/linux/cmake.md)
   * [cpu](content/linux/cpu.md)

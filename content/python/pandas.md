@@ -8,3 +8,14 @@ df = pd.concat([df, df2], axis=1)
 
 This will join your df and df2 based on indexes (same indexed rows will be concatenated, if other dataframe has no member of that index it will be concatenated as nan).
 
+# 重置 index
+
+```python
+df.reset_index(drop=True) 
+```
+
+# 重置 column name 为另一个 dataframe 的 column names
+```python
+df1.columns = df2.columns[:].tolist()
+```
+
