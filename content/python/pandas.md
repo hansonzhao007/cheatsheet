@@ -19,3 +19,10 @@ df.reset_index(drop=True)
 df1.columns = df2.columns[:].tolist()
 ```
 
+# 挑选行列
+```python
+pick = [1,4,6,8]
+df.ix[pick] # 挑选行
+
+df.iloc[:, 0:150:5] # 前面代表选择所有列，后面代表选择从 0 到 150 列，每隔5个取一个
+```
