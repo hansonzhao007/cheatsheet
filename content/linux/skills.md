@@ -126,5 +126,21 @@ make install
 sudo update-grub
 ```
 
+# linux default to text mode
+
+
+edit `/etc/default/grub`
+```bash
+GRUB_CMDLINE_LINUX_DEFAULT="text"
+GRUB_TERMINAL=console
+```
+
+saving those change:
+```bash
+sudo update-grub
+sudo systemctl set-default multi-user.target
+```
+
+
 
 
