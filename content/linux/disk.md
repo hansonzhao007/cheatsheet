@@ -16,6 +16,7 @@ sudo mkswap /dev/sda6 把该设备格式化成swap文件系统
 ```bash
 df -Th # 显示磁盘挂在目录，以及文件系统
 lsblk  # displays block devices
+fdisk -l # 显示磁盘物理状态
 ```
 
 # 挂载
@@ -42,3 +43,35 @@ sudo mount tmpfs ~/tmp/ -t tmpfs
 # umount
 sudo umount ~/tmp
 ```
+
+# 关闭 ext4 journal
+
+```bash
+# 格式化磁盘 
+hanson@u41@14:51:22:~ sudo mkfs.ext4 /dev/nvme0n1
+mke2fs 1.44.1 (24-Mar-2018)
+Discarding device blocks: done
+Creating filesystem with 293028246 4k blocks and 73261056 inodes
+Filesystem UUID: 03727098-d292-4bb3-8d4c-c5ad157ec54e
+Superblock backups stored on blocks:
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208,
+	4096000, 7962624, 11239424, 20480000, 23887872, 71663616, 78675968,
+	102400000, 214990848
+...
+
+# 查看是否开启日志
+hanson@u41@14:53:52:~ sudo dumpe2fs /dev/nvme0n1 | grep 'Filesystem features' | grep 'has_journal'
+dumpe2fs 1.44.1 (24-Mar-2018)
+Filesystem features:      has_journal ext_attr resize_inode dir_index filetype extent 64bit flex_bg sparse_super large_file huge_file dir_nlink extra_isize metadata_csum
+
+# 关闭日志
+hanson@u41@14:53:52:~ sudo tune2fs -O ^has_journal /dev/nvme0n1
+tune2fs 1.44.1 (24-Mar-2018)
+
+# 开启日志
+hanson@u41@14:53:52:~ sudo tune2fs -O has_journal /dev/nvme0n1
+```
+
+
+
+
