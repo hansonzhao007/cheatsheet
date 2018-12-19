@@ -30,3 +30,15 @@ mount [-t type] device dir: 将device挂载到目录dir上。如果dir是已经�
 [fio documentation](https://fio.readthedocs.io/en/latest/fio_doc.html)
 
 [Storage Performance Benchmarking with fio](https://thesanguy.com/2018/01/24/storage-performance-benchmarking-with-fio/)
+
+# mount tmpfs
+
+```bash
+cd 
+mkdir tmp
+# 在自己的home 目录下创建一个 mount 到RAM 的 tmp folder
+sudo mount tmpfs ~/tmp/ -t tmpfs
+
+# umount
+sudo umount ~/tmp
+```
