@@ -144,3 +144,17 @@ sudo systemctl set-default multi-user.target
 
 
 
+
+# screen 命令
+
+```bash
+# 创建 screen
+screen -S hanson
+
+# 列出所有 screen
+screen -ls
+
+# 返回 screen. id 是 ls cmd 显示 出来的对应screen
+screen -r id
+```
+
