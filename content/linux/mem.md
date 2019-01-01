@@ -27,7 +27,7 @@ Hugetlb:           40960 kB
 
 ## 在 C++ 里配置 hugepage
 
-参看source code `tools/testing/selftests/vm/hugepage-shm.c`
+参看source code `tools/testing/selftests/vm/map_hugetlb.c`
 
 ## Reference
 * [hugetlbpage](https://www.kernel.org/doc/Documentation/vm/hugetlbpage.txt)
