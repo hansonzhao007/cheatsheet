@@ -39,6 +39,7 @@ cd
 mkdir tmp
 # 在自己的home 目录下创建一个 mount 到RAM 的 tmp folder
 sudo mount tmpfs ~/tmp/ -t tmpfs
+# mount -t tmpfs -o size=512m tmpfs /mnt/ram # 挂载一个 512MB 的memory 空间到 /mnt/ram 作为 ram 磁盘
 
 # umount
 sudo umount ~/tmp
