@@ -184,4 +184,8 @@ perfsvg perf.data.2018071020563854
 
 ![fperf](/img/fperf.svg)
 
+## Perf 乱码
 
+```
+echo 0 > /proc/sys/kernel/kptr_restrict
+```
