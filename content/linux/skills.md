@@ -161,14 +161,18 @@ screen -r id
 # cpufreq-set all
 
 ```
-   #!/bin/bash
-   MAX_CPU=$((`nproc --all` - 1))
-   for i in $(seq 0 $MAX_CPU); do
-       echo "Changing CPU " $i " with parameter "$@;
-       cpufreq-set -c $i $@ ;
-   done
+#!/bin/bash
+MAX_CPU=$((`nproc --all` - 1))
+for i in $(seq 0 $MAX_CPU); do
+    echo "Changing CPU " $i " with parameter "$@;
+    cpufreq-set -c $i $@ ;
+done
 ```
 
 ```bash
 cpufreq-set-all -g powersave
 ```
+
+# Cgroups
+
+[Cgroups](https://www.linuxsecrets.com/archlinux-wiki/wiki.archlinux.org/index.php%3Ftitle=Cgroups&mobileaction=toggle_view_mobile.html)
