@@ -158,3 +158,17 @@ screen -ls
 screen -r id
 ```
 
+# cpufreq-set all
+
+```
+   #!/bin/bash
+   MAX_CPU=$((`nproc --all` - 1))
+   for i in $(seq 0 $MAX_CPU); do
+       echo "Changing CPU " $i " with parameter "$@;
+       cpufreq-set -c $i $@ ;
+   done
+```
+
+```bash
+cpufreq-set-all -g powersave
+```

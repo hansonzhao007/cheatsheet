@@ -82,7 +82,7 @@ hanson@u41@14:53:52:~ sudo tune2fs -O has_journal /dev/nvme0n1
 ## 系统 IO 监控
 
 ```bash
-iostat -xdm 1
+iostat -xdmt 1
 ```
 * `%util`:代表磁盘繁忙程度。100% 表示磁盘繁忙, 0%表示磁盘空闲。但是注意,磁盘繁忙不代表磁盘(带宽)利用率高  
 * `argrq-sz`:提交给驱动层的IO请求大小,一般不小于4K,不大于max(readahead_kb, max_sectors_kb). 可用于判断当前的IO模式,一般情况下,尤其是磁盘繁忙时, 越大代表顺序,越小代表随机
