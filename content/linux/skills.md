@@ -175,4 +175,4 @@ cpufreq-set-all -g powersave
 
 # Cgroups
 
-[Cgroups](https://www.linuxsecrets.com/archlinux-wiki/wiki.archlinux.org/index.php%3Ftitle=Cgroups&mobileaction=toggle_view_mobile.html)
+[cgroups](https://www.linuxjournal.com/content/everything-you-need-know-about-linux-containers-part-i-linux-control-groups-and-process)
