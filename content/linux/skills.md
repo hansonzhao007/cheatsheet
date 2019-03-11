@@ -175,4 +175,4 @@ cpufreq-set-all -g powersave
 
 # Cgroups
 
-[cgroups](https://www.linuxjournal.com/content/everything-you-need-know-about-linux-containers-part-i-linux-control-groups-and-process)
+[Linux Cgroup系列（04）：限制cgroup的内存使用（subsystem之memory）](https://segmentfault.com/a/1190000008125359)
