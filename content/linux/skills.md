@@ -176,3 +176,9 @@ cpufreq-set-all -g powersave
 # Cgroups
 
 [Linux Cgroup系列（04）：限制cgroup的内存使用（subsystem之memory）](https://segmentfault.com/a/1190000008125359)
+
+# 查看打开几个文件
+
+```
+lsof -a  -p 763[pid]
+```
