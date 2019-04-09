@@ -182,3 +182,14 @@ cpufreq-set-all -g powersave
 ```
 lsof -a  -p 763[pid]
 ```
+
+# replace swap file
+
+```
+# Adding a swap file
+sudo dd if=/dev/zero of=/mnt/ssd/swapfile bs=1G count=4
+sudo chmod 600 /mnt/ssd/swapfile
+sudo mkswap /mnt/ssd/swapfile
+sudo swapon /mnt/ssd/swapfile
+sudo swapoff -v /swapfile
+```
