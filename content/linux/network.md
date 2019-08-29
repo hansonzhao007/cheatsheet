@@ -9,6 +9,22 @@ nc -zv 127.0.0.1 22 80 8080
 # range of ports
 nc -zv 127.0.0.1 22 20-30
 ```
+# iptables SNAT sharing Internet
+
+```bash
+# save this as config.sh
+sysctl -w net.ipv4.ip_forward=1
+sysctl -p
+
+iptables -X
+iptables -t nat -X
+
+iptables -F
+iptables -t nat -F
+
+iptables -t nat -A POSTROUTING -s 192.168.0.0/24 -o eno2 -j SNAT --to-source 129.107.208.76
+```
+
 
 # ip scan
 ```bash
