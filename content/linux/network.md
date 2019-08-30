@@ -54,3 +54,20 @@ IP=dhcp
 
 systemctl restart dhcpcd.service
 ```
+
+```bash
+# 做 mac 到 ip 的映射
+sudo vim /etc/dhcp/dhcpd.conf
+
+# 设置 192.168.0.* 对应的域名
+sudo vim /etc/bind/zones/db.192.168.0
+
+# 绑定 seir* 对应的 ip 解析 
+sudo vim /etc/bind/zones/uta.edu.db
+
+# 重启 dhcp 服务
+sudo /etc/init.d/isc-dhcp-server restart
+
+# 显示分配 ip 状态
+sudo /etc/init.d/isc-dhcp-server status
+```
