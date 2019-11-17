@@ -3,7 +3,6 @@
     "title": "cheatsheet",
     "author": "XS Zhao",
     "plugins": [
-        "prism", 
         "-highlight", 
         "addcssjs", 
         "anchor-navigation-ex", 
