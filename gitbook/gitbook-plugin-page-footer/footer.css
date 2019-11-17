@@ -111,43 +111,23 @@
 	padding-bottom: 10px;
 }
 
+.footer__quote--normal {
+	word-break: break-all;
+	padding: 10px 0;
+}
+
 .footer__modifyTime--normal {
 	float: right;
 }
 
-@media screen and (min-width: 720px) {
-	.footer__container--normal > img {
-		width: 20% !important;
-		height: 20% !important;
-	}
-	.footer__main--normal {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		font-size: 12px !important;
-		text-align: right;
-	}
-}
-
-@media screen and (max-width: 720px) {
-	/* styles applied when the page/app is viewed on a screen with a width greater than or equal to 720px */
-	.footer__quote--normal {
-		display: none;
-	}
-	.footer__container--normal > img {
-		width: 29% !important;
-		height: 29% !important;
-	}
-	.footer__main--normal {
-		font-size: 12px !important;
-		text-align: right;
-	}
+.footer__main--normal {
+	float: right;
+	font-size: 12px !important;
 }
 
 .footer__main__paragraph--normal {
 	margin: 3px 0 !important;
 }
-
 
 /**
  *
@@ -186,10 +166,6 @@
 	.footer__quote--symmetrical {
 		margin-top: 10px !important;
 	}
-	.footer__container--symmetrical > img {
-		width: 20% !important;
-		height: 20% !important;
-	}
 	.footer__main--symmetrical {
 		position: absolute;
 		right: 0;
@@ -204,10 +180,6 @@
 	.footer__quote--symmetrical {
 		display: none;
 	}
-	.footer__container--symmetrical > img {
-		width: 29% !important;
-		height: 29% !important;
-	}
 	.footer__main--symmetrical {
 		font-size: 12px !important;
 		margin-top: 10px !important;
@@ -217,4 +189,17 @@
 
 .footer__main__paragraph--symmetrical {
 	margin: 3px 0 !important;
+}
+
+/** themes */
+.footer svg > path {
+	fill: #333;
+}
+
+.book.color-theme-1 .footer svg > path {
+	fill: #704214;
+}
+
+.book.color-theme-2 .footer svg > path {
+	fill: #bdcadb;
 }
