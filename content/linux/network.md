@@ -56,7 +56,7 @@ systemctl restart dhcpcd.service
 ```
 
 ```bash
-# 做 mac 到 ip 的映射
+# 做 mac 到 域名映射
 sudo vim /etc/dhcp/dhcpd.conf
 
 # 设置 192.168.0.* 对应的域名
