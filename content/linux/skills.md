@@ -142,6 +142,42 @@ sudo systemctl set-default multi-user.target
 ```
 
 
+# linux kernel change
+grep -A100 submenu  /boot/grub/grub.cfg |grep menuentry
+```bash
+submenu 'Advanced options for Ubuntu' $menuentry_id_option 'gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-1062-aws' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-1062-aws-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-1062-aws (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-1062-aws-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-1061-aws' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-1061-aws-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-1061-aws (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-1061-aws-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-131-generic' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-131-generic-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+    menuentry 'Ubuntu, with Linux 4.4.0-131-generic (recovery mode)' --class ubuntu --class gnu-linux --class gnu --class os $menuentry_id_option 'gnulinux-4.4.0-131-generic-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29' {
+
+```
+
+ind the ids of parent and child menu entries. For example, menu entry id for Advanced options for Ubuntu is `gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29`
+
+menu entry for Ubuntu, with Linux 4.4.0-131-generic is `gnulinux-4.4.0-131-generic-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29`
+
+vim `/etc/default/grub`
+
+replace `GRUB_DEFAULT` with above value (With Quotes)
+
+```bash
+GRUB_DEFAULT="gnulinux-advanced-4a67ec61-9cd5-4a26-b00f-9391a34c8a29>gnulinux-4.4.0-131-generic-recovery-4a67ec61-9cd5-4a26-b00f-9391a34c8a29"
+GRUB_HIDDEN_TIMEOUT=0
+GRUB_HIDDEN_TIMEOUT_QUIET=true
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR=`lsb_release -i -s 2> /dev/null || echo Debian`
+GRUB_CMDLINE_LINUX_DEFAULT="console=tty1 console=ttyS0"
+GRUB_CMDLINE_LINUX=""
+```
+
+```
+sudo update-grub
+sudo reboot
+```
+
 
 
 
